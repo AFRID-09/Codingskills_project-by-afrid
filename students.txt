@@ -1,2 +1,2 @@
-1 yash 78.5
-2 tanveer 40
+1 afrid 30000000
+2  srmap 40000000
