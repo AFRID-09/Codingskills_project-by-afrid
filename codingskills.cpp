@@ -310,9 +310,9 @@ public:
 int main() {
     StudentManager system;
     
-    cout << "" << endl;
+    cout << "\n" << endl;
     cout << "   STUDENT MANAGEMENT SYSTEM v2.0       " << endl;
-    cout << "" << endl;
+    cout << "\n" << endl;
 
     if (system.authenticate()) {
         system.launchApplication();
@@ -323,4 +323,4 @@ int main() {
     }
 
     return 0;
-}
+}    
