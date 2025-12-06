@@ -1,4 +1,4 @@
-// Student Management System - Class-Based Implementation
+ // Student Management System - Class-Based Implementation
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -293,9 +293,13 @@ public:
     void launchApplication() {
         cout << "Logged in as: " << userRole << " (" << loggedInUser << ")" << endl;
 
-        if (userRole == "admin") {
+        // Convert role to lowercase for comparison
+        string role = userRole;
+        transform(role.begin(), role.end(), role.begin(), ::tolower);
+
+        if (role == "admin") {
             adminPanel();
-        } else if (userRole == "staff") {
+        } else if (role == "staff") {
             staffPanel();
         } else {
             guestPanel();
